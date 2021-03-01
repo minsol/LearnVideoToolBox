@@ -2,7 +2,7 @@
 //  ViewController.m
 //  AudioStreamServer
 //
-//  Created by 林伟池 on 2017/4/1.
+//  Created by loyinglin on 2017/4/1.
 //  Copyright © 2017年 loying. All rights reserved.
 //
 
@@ -29,7 +29,7 @@ const int port = 51515;
  */
 - (int)startServer {
     // open file
-    FILE* file = fopen([[[NSBundle mainBundle] pathForResource:@"chenli" ofType:@"mp3"] UTF8String], "r");
+    FILE* file = fopen([[[NSBundle mainBundle] pathForResource:@"abc" ofType:@"mp3"] UTF8String], "r");
     if (file == NULL) {
         printf("error file path\n");
         return 1;
